@@ -8,10 +8,10 @@ def binary_search(input_array, value):
         if input_array[midpoint] == value:
             return midpoint
         else:
-	        if value < input_array[midpoint]:
-	            last = midpoint - 1
-	        else:
-	            first = midpoint + 1
+	    if value < input_array[midpoint]:
+	        last = midpoint - 1
+	    else:
+	        first = midpoint + 1
     return -1
 
 test_list = [1,3,9,11,15,19,29]
