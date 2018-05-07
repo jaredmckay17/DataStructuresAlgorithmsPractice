@@ -28,7 +28,7 @@ def binary_search(input_array, value):
     else:
         midpoint = len(input_array) // 2
         if input_array[midpoint] == value:
-            return True
+            return midpoint
         else:
             if value < input_array[midpoint]:
                 return binary_search(input_array[:midpoint], value)
