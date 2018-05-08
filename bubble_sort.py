@@ -10,7 +10,7 @@ def bubble_sort(input_list):
                 input_list[i + 1] = temp
 
 
-sample_data = [54,26,93,17,77,31,44,55,20]
+sample_data = [23983, 3, 4, 7, 8, 0, 123, 124, 2350123, 12301201]
 bubble_sort(sample_data)
 print(sample_data)
-# [17, 20, 26, 31, 44, 54, 55, 77, 93]
+# [0, 3, 4, 7, 8, 123, 124, 23983, 2350123, 12301201]
