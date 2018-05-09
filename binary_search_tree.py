@@ -1,3 +1,24 @@
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+    
+    def get(self):
+        return self.val
+    
+    def set(self, val):
+        self.val = val
+        
+    def get_children(self):
+        children = []
+        if(self.left != None):
+            children.append(self.left)
+        if(self.right != None):
+            children.append(self.right)
+        return children
+
+
 class BST(object):
     def __init__(self, root):
         self.root = Node(root)
