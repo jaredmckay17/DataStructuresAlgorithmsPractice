@@ -1,22 +1,43 @@
-class Node:
+class Node(object):
     def __init__(self, val):
-        self.val = val
+        self.value = val
         self.left = None
         self.right = None
-    
+
     def get(self):
-        return self.val
-    
+        return self.value
+
     def set(self, val):
-        self.val = val
-        
+        self.value = val
+
     def get_children(self):
         children = []
-        if(self.left != None):
+        if self.left != None:
             children.append(self.left)
-        if(self.right != None):
+        if self.right != None:
             children.append(self.right)
         return children
+
+    def print_in_order(self):
+        if self.left != None:
+            self.left.print_in_order()
+        print(self.data)
+        if self.right != None:
+            self.right.print_in_order()
+
+    def print_pre_order(self):
+        print(self.data)
+        if self.left != None:
+            self.left.print_pre_order()
+        if self.right != None:
+            self.right.print_pre_order()
+
+    def print_post_order(self):
+        if self.left != None:
+            self.left.print_post_order()
+        if self.right != None:
+            self.right.print_post_order()
+        print(self.data)
 
 
 class BST(object):
